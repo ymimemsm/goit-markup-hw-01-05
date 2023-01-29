@@ -18,6 +18,7 @@ rel="stylesheet"
     <!-- Styles connection -->
     <link rel="stylesheet" href="./css/styles.css" />
 </head>
+
 <body>
     <header class="header-main">
 <!-- Navigation  -->
@@ -28,7 +29,7 @@ rel="stylesheet"
         >
         <ul class="List header-links-flex">
 <li class="Nav-link">
-            <a class="Decoration Nav" href="./index.html">Studio</a>
+            <a class="Decoration current" href="./index.html">Studio</a>
 </li>
 <li class="Nav-link">
             <a class="Decoration Nav" href="./portfolio.html">Portfolio</a>
@@ -61,7 +62,7 @@ rel="stylesheet"
           <section class="Section1">
             <div class="container hero-flex-flex">
                 <h1 class="Section1-h hero-flex">Effective Solutions for Your Business</h1>
-                <button class="Button-BG buttons " type="button">Order Service</button>
+                <button class="Button-BG buttons " type="button" data-modal-open>Order Service</button>
             </div>
           </section>
           <!-- 2222Second section STRATEGY-->
@@ -434,5 +435,16 @@ rel="stylesheet"
           
       </div>
     </footer>
+    <!----------------------------------------Modal--------------------------------------------------->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close" type="button" data-modal-close> 
+                    <svg class="modal-button-svg" width="8" height="8">
+                      <use href="./images/sprite.svg#icon-cross"></use>             
+                    </svg>           
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
